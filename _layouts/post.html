@@ -6,7 +6,7 @@ layout: base
   <header
   class="post-header"
   {%- if page.thumbnail != null -%}
-  style="background-image: url({{ page.thumbnail }});"
+  style="background-image: url({{ site.url }}{{ site.baseurl }}{{ page.thumbnail }});"
   {%- endif -%}
   >
   <div class="container">

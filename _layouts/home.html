@@ -28,7 +28,7 @@ layout: base
         <div
           class="post-card"
           {%- if post.thumbnail != null -%}
-          style="background-image: url({{ post.thumbnail }});"
+          style="background-image: url({{ site.url }}{{ site.baseurl }}{{ post.thumbnail }});"
           {%- endif -%}
           >
           <a class="post-card__link" href="{{ post.url | relative_url }}"></a>
