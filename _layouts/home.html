@@ -31,11 +31,11 @@ layout: base
           style="background-image: url({{ post.thumbnail | relative_url }});"
           {%- endif -%}
           >
-          <a class="post-card__link" href="{{ post.url | relative_url }}"></a>
+          <a class="post-card__link" href="{{ post.url | escape }}"></a>
             <div class="post-card__content">
               <span class="post-meta">{{ post.date | date: date_format }}</span>
               <h3>
-                <a class="post-link" href="{{ post.url | relative_url }}">
+                <a class="post-link" href="{{ post.url | escape }}">
                   {{ post.title | escape }}
                 </a>
               </h3>
