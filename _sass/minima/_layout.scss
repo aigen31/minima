@@ -127,6 +127,10 @@
     margin-left: 20px;
   }
 
+  .page-link__tel {
+    display: none;
+  }
+
   @media screen and (min-width: $on-medium) {
     position: static;
     float: right;
@@ -156,6 +160,10 @@
       &__tel {
         margin-left: $spacing-unit;
       }
+    }
+
+    .page-link__tel {
+      display: block;
     }
   }
 }
